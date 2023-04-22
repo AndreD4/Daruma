@@ -42,12 +42,12 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.A))
     {
-      ApplyRotation(rotationPower);
+      ApplyRotation(-rotationPower);
     }
 
     else if (Input.GetKey(KeyCode.D))
       {
-          ApplyRotation(-rotationPower);
+          ApplyRotation(rotationPower);
       }
     }
 
