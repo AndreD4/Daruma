@@ -544,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941379872708010004, guid: 895baee8be3dace418d925bc93ae859e, type: 3}
       propertyPath: movementVector.y
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5024397158378854759, guid: 895baee8be3dace418d925bc93ae859e, type: 3}
       propertyPath: m_Name
