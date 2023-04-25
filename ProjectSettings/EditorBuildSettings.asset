@@ -26,4 +26,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Village 6.unity
     guid: 37e5186ae38b23b47951114e85966b68
+  - enabled: 1
+    path: Assets/Scenes/Village 7.unity
+    guid: 8e66826250a52ad43bbc7a38786f391a
+  - enabled: 1
+    path: Assets/Scenes/Village 8.unity
+    guid: cf2a646a6be610b43bdcf45f7d75b431
+  - enabled: 1
+    path: Assets/Scenes/Village 9.unity
+    guid: a624d07516eb0b648a439c1d0353bb3f
+  - enabled: 1
+    path: Assets/Scenes/Garden 0.unity
+    guid: 6578f5c8b3d4c3e478a6820b985e9bc0
+  - enabled: 1
+    path: Assets/Scenes/Garden 1.unity
+    guid: d5fec1f379d39df4a80599a3278016d6
+  - enabled: 1
+    path: Assets/Scenes/Garden 2.unity
+    guid: 1910debfa2efc0948bc474d707354b4a
+  - enabled: 1
+    path: Assets/Scenes/Garden 3.unity
+    guid: a4447f65cacebdc41a73934196d02261
   m_configObjects: {}
