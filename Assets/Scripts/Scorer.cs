@@ -6,12 +6,26 @@ public class Scorer : MonoBehaviour
 { 
     int hits = 0;
     void OnCollisionEnter(Collision other)
-    { 
-      if (other.gameObject.tag != "Friendly" + "Finish")
+    {
+
+      switch (other.gameObject.tag)
       {
-        hits++;
-        Debug.Log("you have bumped into something this many times:" + hits);
+        case "Friendly":
+            
+            break;
+
+        case "Finish":
+            
+            break;
+        default:
+            HitCount();
+            break;
       }
-      
+    }
+
+    void HitCount()
+    {
+      hits++;
+      Debug.Log("You have hit an something this many times:" + hits);
     }
 }
