@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spinner : MonoBehaviour
-{
+{   [SerializeField] float xRotate = 1f;
+    [SerializeField] float yRotate = 1f;
+    [SerializeField] float zRotate = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(1,1,1);
+        transform.Rotate(xRotate,yRotate,zRotate);
     }
 }
