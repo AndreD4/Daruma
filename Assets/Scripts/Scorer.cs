@@ -19,7 +19,7 @@ public class Scorer : MonoBehaviour
             break;
         default:
             HitCount();
-            break;
+            return;
       }
     }
 
