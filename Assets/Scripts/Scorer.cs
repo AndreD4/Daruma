@@ -30,5 +30,6 @@ public class Scorer : MonoBehaviour
     {
       hits++;
       Debug.Log("You have hit an something this many times:" + hits);
+      //want to call somthing or ref somthing i dont know i need to look it up
     }
 }
