@@ -23,6 +23,9 @@ public class Scorer : MonoBehaviour
       }
     }
 
+    //Onces i hit something it will only count once till i go back to starting pad
+    //find a way to call the next level 
+
     void HitCount()
     {
       hits++;
