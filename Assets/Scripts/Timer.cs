@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     void Start()
     {
-        
+        //I want to create a timer that counts how long it takes to finish the level
+        // plus how long it takes to finish the while game
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         Debug.Log(Time.time);

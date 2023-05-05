@@ -42,6 +42,7 @@ public class CollisionHandler : MonoBehaviour
             break;
       }
     }
+    //wondering if i should write the scorer code in here
 
      void StartFinishSequence()
     {
