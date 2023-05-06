@@ -67,7 +67,7 @@ public class CollisionHandler : MonoBehaviour
       Invoke("ReloadLevel", crashDelay);
       
     }
-    //Deleted scorer Script added code to CollisionHandler Succsess
+    
     //printing out hit score into console log success
     //Still not working the way i want
     //want to print out score result after level finished
