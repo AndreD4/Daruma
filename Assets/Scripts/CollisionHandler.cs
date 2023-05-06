@@ -13,7 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
-    int hits = 0;
+    //int hits = 0;
     
 
    

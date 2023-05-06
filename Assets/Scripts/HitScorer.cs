@@ -23,6 +23,8 @@ public class HitScorer : MonoBehaviour
      { 
       hits++;
       Debug.Log("you have hit somthing this many times:" + hits);
+      
      }
+
     }
 }

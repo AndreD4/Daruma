@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6334902687588088856}
   - component: {fileID: 6786643064910022718}
   - component: {fileID: 3404211162682425199}
-  - component: {fileID: 2701053739903655553}
+  - component: {fileID: 2604370573059301838}
   m_Layer: 0
   m_Name: Daruma
   m_TagString: Player
@@ -260,7 +260,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2701053739903655553
+--- !u!114 &2604370573059301838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4763731682696738782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6729408cb07a19458e71ac0fd3857ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cd21bd75bc344541803e8b94e74bf17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1733722976675861150
