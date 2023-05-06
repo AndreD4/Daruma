@@ -4,37 +4,37 @@ using UnityEngine;
 
 public class HitScorer : MonoBehaviour
 {
-    int hits = 0;
-    bool isTransitioning = false;
-    void Start()
-    {
+    
+    // bool isTransitioning = false;
+    // void Start()
+    // {
         
-    }
+    // }
 
     
-    void OnCollisionEnter(Collision other)
-    {
-        if (isTransitioning) { return; }
+    // void OnCollisionEnter(Collision other)
+    // {
+    //     if (isTransitioning) { return; }
 
-      switch (other.gameObject.tag)
-      {
-        case "Friendly":
+    //   switch (other.gameObject.tag)
+    //   {
+    //     case "Friendly":
             
-            break;
+    //         break;
 
-        case "Finish":
+    //     case "Finish":
             
-            break;
+    //         break;
 
-        default:
-            HitCount();
-            return;
-      }
-    }
+    //     default:
+    //         HitCount();
+    //         return;
+    //   }
+    // }
 
-    void HitCount()
-    {
-      hits++;
-      Debug.Log("you have hit somthing this many times:" + hits);
-    }
+    // void HitCount()
+    // {
+    //   hits++;
+    //   Debug.Log("you have hit somthing this many times:" + hits);
+    // }
 }
