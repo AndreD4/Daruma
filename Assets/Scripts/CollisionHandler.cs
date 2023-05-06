@@ -40,6 +40,8 @@ public class CollisionHandler : MonoBehaviour
             break;
         default:
             StartCrashSequence();
+            hits++;
+            Debug.Log("You have hit an something this many times:" + hits);
             break;
       }
     }
@@ -61,8 +63,7 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      hits++;
-      Debug.Log("You have hit an something this many times:" + hits);
+      
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
       
