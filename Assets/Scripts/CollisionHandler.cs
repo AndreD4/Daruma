@@ -47,18 +47,18 @@ public class CollisionHandler : MonoBehaviour
 
         default:
             StartCrashSequence();
-            HitCount();
+            // HitCount();
             break;
       }
     }
 
-    void HitCount()
-    {
-        { 
-          hits++;
-          Debug.Log("you have hit somthing this many times:" + hits);
-        }
-    }
+    // void HitCount()
+    // {
+    //     { 
+    //       hits++;
+    //       Debug.Log("you have hit somthing this many times:" + hits);
+    //     }
+    // }
     
 
      void StartFinishSequence()
