@@ -67,6 +67,10 @@ public class CollisionHandler : MonoBehaviour
       Debug.Log("You have hit an something this many times:" + hits);
     }
     //Deleted scorer Script added code to CollisionHandler Succsess
+    //printing out hit score into console log success
+    //want to print out score result after level finished
+    //and keep track of the score for each level
+    //at the end of the game print out total hit score
     
     void LoadNextLevel()
     {
