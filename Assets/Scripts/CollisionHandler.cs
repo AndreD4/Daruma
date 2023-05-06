@@ -62,13 +62,14 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      
+      Debug.Log("you have hit somthing");
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
       
     }
     //Deleted scorer Script added code to CollisionHandler Succsess
     //printing out hit score into console log success
+    //Still not working the way i want
     //want to print out score result after level finished
     //and keep track of the score for each level
     //at the end of the game print out total hit score
