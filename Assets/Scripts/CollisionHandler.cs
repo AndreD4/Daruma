@@ -13,6 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
+    int hits = 0;
 
    
 
@@ -62,6 +63,8 @@ public class CollisionHandler : MonoBehaviour
       crashParticles.Play();
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
+      hits++;
+      Debug.Log("You have hit an something this many times:" + hits);
     }
     
     void LoadNextLevel()
