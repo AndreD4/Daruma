@@ -17,7 +17,7 @@ public class CollisionHandler : MonoBehaviour
 
    
     //int hits = 0; tyring to print out whole numbers
-    
+
     bool isTransitioning = false;
     
     void Start()
@@ -64,7 +64,7 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      Debug.Log("you have hit something this many times");
+      //Debug.Log("you have hit something this many times");
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
     }

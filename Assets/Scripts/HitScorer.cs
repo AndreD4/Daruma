@@ -5,36 +5,20 @@ using UnityEngine;
 public class HitScorer : MonoBehaviour
 {
     
-    // bool isTransitioning = false;
-    // void Start()
-    // {
-        
-    // }
+    int hits = 0;
+    void Start()
+    {
+    //print put whole numbers once when hit into object
+    //printing out hit score into console log success
+    //Still not working the way i want
+    //want to print out score result after level finished
+    //and keep track of the score for each level
+    //at the end of the game print out total hit score
+    }
 
-    
-    // void OnCollisionEnter(Collision other)
-    // {
-    //     if (isTransitioning) { return; }
-
-    //   switch (other.gameObject.tag)
-    //   {
-    //     case "Friendly":
-            
-    //         break;
-
-    //     case "Finish":
-            
-    //         break;
-
-    //     default:
-    //         HitCount();
-    //         return;
-    //   }
-    // }
-
-    // void HitCount()
-    // {
-    //   hits++;
-    //   Debug.Log("you have hit somthing this many times:" + hits);
-    // }
+    void OnCollisionEnter(Collision other)
+    {
+      hits++;
+      Debug.Log("you have hit somthing this many times:" + hits);
+    }
 }
