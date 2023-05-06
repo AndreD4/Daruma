@@ -16,7 +16,8 @@ public class CollisionHandler : MonoBehaviour
     
 
    
-    int hits = 0;
+    //int hits = 0; tyring to print out whole numbers
+    
     bool isTransitioning = false;
     
     void Start()
@@ -66,7 +67,6 @@ public class CollisionHandler : MonoBehaviour
       Debug.Log("you have hit something this many times");
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
-      
     }
     
     //printing out hit score into console log success
