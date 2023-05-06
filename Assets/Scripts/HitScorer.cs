@@ -5,15 +5,36 @@ using UnityEngine;
 public class HitScorer : MonoBehaviour
 {
     int hits = 0;
+    bool isTransitioning = false;
     void Start()
     {
         
     }
 
     
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision other)
     {
-        hits++;
-        Debug.Log("You have hit an something this many times:" + hits);
+        if (isTransitioning) { return; }
+
+      switch (other.gameObject.tag)
+      {
+        case "Friendly":
+            
+            break;
+
+        case "Finish":
+            
+            break;
+
+        default:
+            HitCount();
+            return;
+      }
+    }
+
+    void HitCount()
+    {
+      hits++;
+      Debug.Log("you have hit somthing this many times:" + hits);
     }
 }
