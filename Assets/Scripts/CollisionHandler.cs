@@ -54,7 +54,6 @@ public class CollisionHandler : MonoBehaviour
 
     void HitCount()
     {
-
         { 
           hits++;
           Debug.Log("you have hit somthing this many times:" + hits);
