@@ -13,7 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
-    int hits = 0;
+    
 
    
 
@@ -40,8 +40,7 @@ public class CollisionHandler : MonoBehaviour
             break;
         default:
             StartCrashSequence();
-            hits++;
-            Debug.Log("You have hit an something this many times:" + hits);
+            
             break;
       }
     }

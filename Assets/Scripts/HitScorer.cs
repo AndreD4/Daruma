@@ -10,8 +10,8 @@ public class HitScorer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    void OnCollisionEnter()
     {
         hits++;
         Debug.Log("You have hit an something this many times:" + hits);
