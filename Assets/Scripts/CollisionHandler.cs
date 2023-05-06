@@ -61,10 +61,11 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      GetComponent<Movement>().enabled = false;
-      Invoke("ReloadLevel", crashDelay);
       hits++;
       Debug.Log("You have hit an something this many times:" + hits);
+      GetComponent<Movement>().enabled = false;
+      Invoke("ReloadLevel", crashDelay);
+      
     }
     //Deleted scorer Script added code to CollisionHandler Succsess
     //printing out hit score into console log success
