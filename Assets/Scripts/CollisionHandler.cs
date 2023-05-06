@@ -43,7 +43,7 @@ public class CollisionHandler : MonoBehaviour
             break;
       }
     }
-    //wondering if i should write the scorer code in here
+    
 
      void StartFinishSequence()
     {
@@ -66,6 +66,7 @@ public class CollisionHandler : MonoBehaviour
       hits++;
       Debug.Log("You have hit an something this many times:" + hits);
     }
+    //Deleted scorer Script added code to CollisionHandler Succsess
     
     void LoadNextLevel()
     {
