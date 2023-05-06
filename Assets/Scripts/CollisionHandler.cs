@@ -16,7 +16,7 @@ public class CollisionHandler : MonoBehaviour
     
 
    
-
+    int hits = 0;
     bool isTransitioning = false;
     
     void Start()
@@ -40,9 +40,17 @@ public class CollisionHandler : MonoBehaviour
             break;
         default:
             StartCrashSequence();
-            
+            HitCount();
             break;
       }
+
+      
+    }
+
+    void HitCount()
+    {
+      hits++;
+      Debug.Log("you have hit somthing" + hits);
     }
     
 
@@ -62,7 +70,7 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      Debug.Log("you have hit somthing");
+     
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
       
