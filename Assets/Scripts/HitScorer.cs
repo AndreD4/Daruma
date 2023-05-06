@@ -18,7 +18,12 @@ public class HitScorer : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+     if(other.gameObject.tag == "Untagged")
+
+     { 
       hits++;
       Debug.Log("you have hit somthing this many times:" + hits);
+     }
+    
     }
 }
