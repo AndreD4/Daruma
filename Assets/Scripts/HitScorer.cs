@@ -5,24 +5,24 @@ using UnityEngine;
 public class HitScorer : MonoBehaviour
 {
     
-    int hits = 0;
-    void Start()
-    {
-    //Still not working the way i want
-    //want to print out score result after level finished
-    //and keep track of the score for each level
-    //at the end of the game print out total hit score
-    }
+    // int hits = 0;
+    // void Start()
+    // {
+    // //Still not working the way i want
+    // //want to print out score result after level finished
+    // //and keep track of the score for each level
+    // //at the end of the game print out total hit score
+    // }
 
-    void OnCollisionEnter(Collision other)
-    {
-     if(other.gameObject.tag == "Untagged")
+    // void OnCollisionEnter(Collision other)
+    // {
+    //  if(other.gameObject.tag == "Untagged")
 
-     { 
-      hits++;
-      Debug.Log("you have hit somthing this many times:" + hits);
+    //  { 
+    //   hits++;
+    //   Debug.Log("you have hit somthing this many times:" + hits);
       
-     }
+    //  }
 
-    }
+    // }
 }

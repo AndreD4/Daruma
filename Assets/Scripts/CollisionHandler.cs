@@ -20,7 +20,7 @@ public class CollisionHandler : MonoBehaviour
     //int hits = 0; tyring to print out whole numbers
 
     bool isTransitioning = false;
-    bool isHitCount = false;
+    bool isHitCount = true;
     
     void Start()
     {
