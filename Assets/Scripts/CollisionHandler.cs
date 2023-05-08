@@ -13,13 +13,14 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
-    //int hits = 0;
+    int hits = 0;
     
 
    
     //int hits = 0; tyring to print out whole numbers
 
     bool isTransitioning = false;
+    bool isHitCount = false;
     
     void Start()
     {
@@ -41,24 +42,23 @@ public class CollisionHandler : MonoBehaviour
             StartFinishSequence();
             break;
             
-        // case "Untagged":
-        //     HitCount();
-        //     break;
+        case "Untagged":
+            HitCount();
+            break;
 
         default:
             StartCrashSequence();
-            // HitCount();
             break;
       }
     }
 
-    // void HitCount()
-    // {
-    //     { 
-    //       hits++;
-    //       Debug.Log("you have hit somthing this many times:" + hits);
-    //     }
-    // }
+    void HitCount()
+    {
+        { 
+          hits++;
+          Debug.Log("you have hit somthing this many times:" + hits);
+        }
+    }
     
 
      void StartFinishSequence()
