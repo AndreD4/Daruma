@@ -20,7 +20,7 @@ public class CollisionHandler : MonoBehaviour
     //int hits = 0; tyring to print out whole numbers
 
     bool isTransitioning = false;
-    bool isHitCount = true;
+    
     
     void Start()
     {
@@ -42,23 +42,23 @@ public class CollisionHandler : MonoBehaviour
             StartFinishSequence();
             break;
             
-        case "Untagged":
-            HitCount();
-            break;
+        // case "Untagged":
+        //     HitCount();
+        //     break;
 
         default:
             StartCrashSequence();
+            // HitCount();
             break;
       }
     }
 
-    void HitCount()
-    {
-        { 
-          hits++;
-          Debug.Log("you have hit somthing this many times:" + hits);
-        }
-    }
+    // void HitCount()
+    // {
+    //     { 
+          
+    //     }
+    // }
     
 
      void StartFinishSequence()
@@ -77,9 +77,17 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      //Debug.Log("you have hit something this many times");
+      hits++;
+      Debug.Log("you have hit somthing this many times:" + hits);
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
+      if (isTransitioning)
+      {
+        hits++;
+        Debug.Log("you have hit somthing this many times:" + hits);
+      }
+    
+      
     }
     
     //printing out hit score into console log success
