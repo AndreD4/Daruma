@@ -13,7 +13,7 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
-    int hits = 0;
+    // int hits = 0;
     
 
    
@@ -77,24 +77,21 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
       crashParticles.Play();
-      hits++;
-      Debug.Log("you have hit somthing this many times:" + hits);
+      // hits++;
+      // Debug.Log("you have hit somthing this many times:" + hits);
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
-      if (isTransitioning)
-      {
-        hits++;
-        Debug.Log("you have hit somthing this many times:" + hits);
-      }
+      // if (isTransitioning)
+      // {
+      //   hits++;
+      //   Debug.Log("you have hit somthing this many times:" + hits);
+      // }
     
       
     }
     
-    //printing out hit score into console log success
-    //Still not working the way i want
-    //want to print out score result after level finished
-    //and keep track of the score for each level
-    //at the end of the game print out total hit score
+  ////////////////////////////////////////////////////////
+       //I cant decide what to do hahahah
     
     void LoadNextLevel()
     {
