@@ -13,6 +13,8 @@ public class CollisionHandler : MonoBehaviour
 
 
     AudioSource audioSource;
+    Movement myMovement;
+    Rigidbody rb;
     // int hits = 0;
     
 
@@ -25,6 +27,8 @@ public class CollisionHandler : MonoBehaviour
     void Start()
     {
       audioSource = GetComponent<AudioSource>();
+      myMovement = GetComponent<Movement>();
+      rb = GetComponent<Rigidbody>();
       
     }
 
@@ -67,7 +71,7 @@ public class CollisionHandler : MonoBehaviour
       audioSource.Stop();
       audioSource.PlayOneShot(finish);
       finishParticles.Play();
-      GetComponent<Movement>().enabled = false;
+      myMovement.enabled = false;
       Invoke("LoadNextLevel", waitForNextLevel);
     }
     
